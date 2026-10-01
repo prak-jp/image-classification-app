@@ -1,0 +1,27 @@
+# Core ML / data
+tensorflow>=2.15
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+
+# Object detection (multi-object, bounding boxes)
+ultralytics>=8.1
+# CLIP text encoder - needed by YOLO-World (open-vocabulary detection).
+# Pinned here so it installs upfront rather than relying on ultralytics'
+# runtime auto-install (which can be flaky on Windows).
+git+https://github.com/ultralytics/CLIP.git
+
+# Explainability / image processing
+opencv-python-headless>=4.8
+pillow>=10.0
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.12
+
+# Deployment
+streamlit>=1.30
+flask>=3.0
+
+# Notebook support (optional, for notebooks/01_exploration_and_training.ipynb)
+jupyter>=1.0

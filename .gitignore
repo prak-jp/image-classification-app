@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Trained models & generated outputs (large / regenerable - don't commit by default)
+models/*.keras
+models/*.h5
+models/model_metadata.json
+outputs/*.png
+outputs/*.txt
+
+# Dataset caches
+data/*
+!data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/
